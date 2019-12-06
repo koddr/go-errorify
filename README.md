@@ -2,6 +2,10 @@
 
 A simple zero-dependencies multilingual error wrapper for your Go (Golang) apps or CLI.
 
+## Languages
+
+🇺🇸 English, 🇷🇺 Russian, 🇪🇸 Español, ...
+
 ## Requirements
 
 - Go `1.11+`
@@ -12,10 +16,6 @@ A simple zero-dependencies multilingual error wrapper for your Go (Golang) apps 
 ```console
 go get -u github.com/koddr/go-errorify
 ```
-
-## Languages
-
-🇺🇸 English, 🇷🇺 Russian, 🇪🇸 Español, ...
 
 ## How to use `go-errorify`?
 
