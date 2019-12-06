@@ -45,6 +45,8 @@ If something went wrong (no such file or directory), output is:
 ✘ Error: open ./folder/file_1.txt: no such file or directory
 ```
 
+![console_output](https://user-images.githubusercontent.com/11155743/70362590-8db79080-1896-11ea-80f8-bbbcb3de179d.png)
+
 ## Developers
 
 - Idea and active development by [Vic Shóstak](https://github.com/koddr) (aka Koddr).
