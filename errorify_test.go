@@ -7,19 +7,20 @@ import (
 
 func TestCreateFile(t *testing.T) {
 	type args struct {
-		err  error
-		name string
+		err    error
+		params []string
 	}
 	tests := []struct {
 		name string
 		args args
 	}{
-		{"no error", args{err: nil, name: "filename.go"}},
-		{"error", args{err: errors.New("error"), name: "./folder/filename.go"}},
+		{"nil error without params", args{err: nil}},
+		{"error without params", args{err: errors.New("error")}},
+		{"error 1 param", args{err: errors.New("error"), params: []string{"file.txt"}}},
 	}
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
-			CreateFile(tt.args.err, tt.args.name)
+			CreateFile(tt.args.err, tt.args.params...)
 		})
 	}
 }
@@ -32,7 +33,7 @@ func TestSimple(t *testing.T) {
 		name string
 		args args
 	}{
-		{"no error", args{err: nil}},
+		{"nil error without params", args{err: nil}},
 		{"error", args{err: errors.New("error")}},
 	}
 	for _, tt := range tests {
