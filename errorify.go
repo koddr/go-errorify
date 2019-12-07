@@ -5,14 +5,9 @@ import (
 )
 
 const (
-	// RED color
-	RED = "\033[0;31m"
-	// GREEN color
-	GREEN = "\033[0;32m"
-	// YELLOW color
-	YELLOW = "\033[1;33m"
-	// ENDLINE end of text line (close color tag)
-	ENDLINE = "\033[0m"
+	red    = "\033[0;31m" // red color
+	yellow = "\033[1;33m" // yellow color
+	end    = "\033[0m"    // end of text line (close color tag)
 )
 
 var (
@@ -35,11 +30,11 @@ func CreateFile(err error, params ...string) {
 		// Switching to lang
 		switch Language {
 		case "ru_RU": // Russian
-			message = RED + "✘ Ошибка: файл " + filename + "не был создан!" + ENDLINE
+			message = red + "✘ Ошибка: файл " + filename + "не был создан!" + end
 		case "es_ES": // Español
-			message = RED + "✘ Error: ¡No se creó el archivo " + filename + "!" + ENDLINE
+			message = red + "✘ Error: ¡No se creó el archivo " + filename + "!" + end
 		default:
-			message = RED + "✘ Error: file " + filename + "not created!" + ENDLINE
+			message = red + "✘ Error: file " + filename + "not created!" + end
 		}
 
 		// Print result
@@ -55,11 +50,11 @@ func Simple(err error) {
 		// Switching to lang
 		switch Language {
 		case "ru_RU": // Russian
-			message = RED + "✘ Error: " + err.Error() + ENDLINE
+			message = red + "✘ Error: " + err.Error() + end
 		case "es_ES": // Español
-			message = RED + "✘ Error: " + err.Error() + ENDLINE
+			message = red + "✘ Error: " + err.Error() + end
 		default:
-			message = RED + "✘ Error: " + err.Error() + ENDLINE
+			message = red + "✘ Error: " + err.Error() + end
 		}
 
 		// Print result

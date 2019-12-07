@@ -1,10 +1,8 @@
 # 💎 go-errorify
 
-A simple zero-dependencies multilingual error wrapper for your Go (Golang) apps or CLI.
+[![GoDoc](https://godoc.org/github.com/koddr/go-errorify?status.svg)](https://godoc.org/github.com/koddr/go-errorify)
 
-## Languages
-
-🇺🇸 English, 🇷🇺 Russian, 🇪🇸 Español, ...
+The understandable zero-dependencies multilingual error wrapper for your Go (Golang) apps or CLI.
 
 ## Requirements
 
@@ -17,7 +15,17 @@ A simple zero-dependencies multilingual error wrapper for your Go (Golang) apps 
 go get -u github.com/koddr/go-errorify
 ```
 
-## How to use `go-errorify`?
+### Tests & Coverage
+
+```console
+go test -cover github.com/koddr/go-errorify
+
+# OR
+
+make
+```
+
+## How to use go-errorify?
 
 ```go
 package main
@@ -46,6 +54,37 @@ If something went wrong (no such file or directory), output is:
 ```
 
 ![console_output](https://user-images.githubusercontent.com/11155743/70362590-8db79080-1896-11ea-80f8-bbbcb3de179d.png)
+
+## How to switch language?
+
+```go
+package main
+
+import (
+  "github.com/koddr/go-errorify"
+
+  // ...
+)
+
+func init() {
+	// Init your app with errors on Russian language
+	errorify.Language = "ru_RU"
+}
+
+func main() {
+  // ...
+
+  // If you want to print other errors on another lang,
+  // just switch it:
+  errorify.Language = "es_ES"
+
+  // ...
+}
+```
+
+### Language support
+
+🇺🇸 English (`en_EN`), 🇷🇺 Russian (`ru_RU`), 🇪🇸 Español (`es_ES`), ...
 
 ## Developers
 
