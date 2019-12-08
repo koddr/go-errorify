@@ -84,7 +84,7 @@ func main() {
 
 ### Language support
 
-🇺🇸 English (`en_EN`), 🇷🇺 Russian (`ru_RU`), 🇪🇸 Español (`es_ES`), ...
+🇺🇸 English (`en_EN`, by default), 🇷🇺 Russian (`ru_RU`), 🇪🇸 Español (`es_ES`), ...
 
 ## Developers
 
