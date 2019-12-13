@@ -96,7 +96,10 @@ If you want to say «thank you» or/and support active development `go-errorify`
 
 1. Add a GitHub Star to project.
 2. Twit about project [on your Twitter](https://twitter.com/intent/tweet?text=A%20dead%20simple%20zero-dependencies%20%23multilingual%20error%20wrapper%20for%20your%20Go%20%28%40Golang%29%20apps%20or%20%23CLI%20%F0%9F%91%8D%20https%3A%2F%2Fgithub.com%2Fkoddr%2Fgo-errorify).
-3. If you want, send to project's author some money via PayPal: [@paypal.me/koddr](https://paypal.me/koddr?locale.x=en_EN).
+3. Donate some money to project author via PayPal: [@paypal.me/koddr](https://paypal.me/koddr?locale.x=en_EN).
+4. Join DigitalOcean at our [referral link](https://m.do.co/c/b41859fa9b6e) (your profit is **$100** and we get $25).
+
+Thanks for your support! 😘 Together, we make this project better every day.
 
 ## License
 
